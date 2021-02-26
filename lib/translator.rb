@@ -28,7 +28,7 @@ def get_japanese_emoticon(english_emoticon)
   japanese_emoticon
 end
 
-get_japanese_emoticon()
+puts get_japanese_emoticon("O:)")
 
 def get_english_meaning
   # code goes here
