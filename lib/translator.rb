@@ -39,6 +39,7 @@ def get_english_meaning(file_path, japanese_emoticon)
   emoticon_translations.each do |meaning, translations|
     if translations[:japanese].include? japanese_emoticon
       english_meaning = meaning
+      binding.pry 
     end 
   end 
   binding.pry 
