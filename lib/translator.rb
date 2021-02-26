@@ -2,9 +2,9 @@
 require "yaml" 
 require 'pry'
 
-def load_library
+def load_library(file_path)
   #load the data for the emoticons
-  emoticon_data = YAML.load_file("lib/emoticons.yml")
+  emoticon_data = YAML.load_file(file_path)
   
   #create a hash to sort the emoticons by name and value in english/japanese 
   emoticon_translations = {}
@@ -36,4 +36,4 @@ def get_english_meaning
   # code goes here
 end
 
-puts load_library
+puts load_library("lib/emoticons.yml")
