@@ -38,10 +38,9 @@ def get_english_meaning(file_path, japanese_emoticon)
   #binding.pry
   emoticon_translations.each do |meaning, translations|
     if translations[:japanese].include? japanese_emoticon
-   #   binding.pry 
       english_meaning = meaning
     else
-      print english_meaning
+      return "Sorry, that emoticon was not found"
     end 
   end 
   # binding.pry 
