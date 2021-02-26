@@ -24,7 +24,9 @@ def get_japanese_emoticon(english_emoticon)
   binding.pry 
   japanese_emoticon = nil 
   emoticon_translations.each do |translations|
+    binding.pry 
     if translations.detect english_emoticon
+      binding.pry
       japanese_emoticon = translations[:japanese]
     end 
   end 
