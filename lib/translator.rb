@@ -28,7 +28,7 @@ def get_japanese_emoticon(english_emoticon)
       binding.pry 
     end 
   end 
-  puts japanese_emoticon
+  japanese_emoticon
 end
 
 puts get_japanese_emoticon("=D")
