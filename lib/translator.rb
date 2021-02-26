@@ -19,8 +19,8 @@ def load_library(file_path)
   emoticon_translations
 end
 
-def get_japanese_emoticon(english_emoticon)
-  emoticon_translations = load_library
+def get_japanese_emoticon(file_path, english_emoticon)
+  emoticon_translations = load_library(file_path)
   #binding.pry 
   japanese_emoticon = nil 
   emoticon_translations.each do |meaning, translations|
@@ -37,4 +37,4 @@ def get_english_meaning
   # code goes here
 end
 
-puts load_library("lib/emoticons.yml")
+puts load_library("./lib/emoticons.yml")
