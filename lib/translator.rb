@@ -19,19 +19,15 @@ def load_library
 end
 
 def get_japanese_emoticon(english_emoticon)
-  # code goes here
+ # code goes here
   emoticon_translations = load_library
   #binding.pry 
   japanese_emoticon = nil 
-  if emoticon_translations.detect english_emoticon
-    #binding.pry 
-    puts english_emoticon
+  emoticon_translations.each do |meaning, translations|
+    if translations.detect english_emoticon
+      japanese_emoticon = translations[:japanese]
+    end 
   end 
-  #emoticon_translations.each do |meaning, translations|
-   # if translations.detect english_emoticon
-    #  japanese_emoticon = translations[:japanese]
-    #end 
-  #end 
   puts japanese_emoticon
 end
 
