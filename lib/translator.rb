@@ -40,7 +40,10 @@ def get_english_meaning(file_path, japanese_emoticon)
       english_meaning = meaning
     end 
   end 
+  binding.pry 
   english_meaning
 end
 
 puts load_library("./lib/emoticons.yml")
+
+puts get_english_meaning("./lib/emoticons.yml", "boo")
