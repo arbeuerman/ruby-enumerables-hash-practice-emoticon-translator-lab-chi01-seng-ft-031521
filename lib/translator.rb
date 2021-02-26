@@ -40,7 +40,7 @@ def get_english_meaning(file_path, japanese_emoticon)
     if translations[:japanese].include? japanese_emoticon
       english_meaning = meaning
     else
-      return "Sorry, that emoticon was not found"
+      "Sorry, that emoticon was not found"
     end 
   end 
   # binding.pry 
