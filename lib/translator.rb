@@ -17,8 +17,10 @@ def load_library
   puts emoticon_translations
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(english_emoticon)
   # code goes here
+  emoticon_translations = load_library
+  emoticon_translations
 end
 
 def get_english_meaning
