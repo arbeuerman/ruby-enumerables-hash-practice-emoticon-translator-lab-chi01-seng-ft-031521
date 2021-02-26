@@ -35,7 +35,7 @@ def get_japanese_emoticon(english_emoticon)
   puts japanese_emoticon
 end
 
-puts get_japanese_emoticon("O:)")
+puts get_japanese_emoticon("=D")
 
 def get_english_meaning
   # code goes here
