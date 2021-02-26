@@ -20,8 +20,15 @@ end
 def get_japanese_emoticon(english_emoticon)
   # code goes here
   emoticon_translations = load_library
-  emoticon_translations
+  japanese_emoticon = nil 
+  emoticon_translations.each do |translations|
+    translations.detect english_emoticon
+    japanese_emoticon = translations[:japanese]
+  end 
+  japanese_emoticon
 end
+
+get_japanese_emoticon()
 
 def get_english_meaning
   # code goes here
