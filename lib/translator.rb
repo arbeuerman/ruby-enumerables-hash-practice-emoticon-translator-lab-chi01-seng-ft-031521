@@ -27,11 +27,11 @@ def get_japanese_emoticon(english_emoticon)
     #binding.pry 
     puts english_emoticon
   end 
-  emoticon_translations.each do |meaning, translations|
-    if translations.detect english_emoticon
-      japanese_emoticon = translations[:japanese]
-    end 
-  end 
+  #emoticon_translations.each do |meaning, translations|
+   # if translations.detect english_emoticon
+    #  japanese_emoticon = translations[:japanese]
+    #end 
+  #end 
   puts japanese_emoticon
 end
 
