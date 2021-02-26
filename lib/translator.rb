@@ -32,8 +32,15 @@ end
 
 puts get_japanese_emoticon("./lib/emoticons.yml", "=D")
 
-def get_english_meaning
-  # code goes here
+def get_english_meaning(file_path, japanese_emoticon)
+  emoticon_translations = load_library(file_path)
+  english_meaning = ""
+  emoticon_translations.each do |meaning, translations|
+    if translations[:japanese].include? japanese_emoticon
+      english_meaning = meaning
+    end 
+  end 
+  english_meaning
 end
 
 puts load_library("./lib/emoticons.yml")
