@@ -24,7 +24,7 @@ def get_japanese_emoticon(english_emoticon)
   japanese_emoticon = nil 
   emoticon_translations.each do |meaning, translations|
     binding.pry 
-    translations.find english_emoticon
+    if translations[:english].include? english_emoticon
       japanese_emoticon = translations[:japanese]
   end 
   puts japanese_emoticon
