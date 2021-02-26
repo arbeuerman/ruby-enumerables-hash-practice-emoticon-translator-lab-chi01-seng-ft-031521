@@ -15,7 +15,7 @@ def load_library
     }
     emoticon_translations[meaning] = translations_hash
   end 
-  emoticon_translations
+  puts emoticon_translations
 end
 
 def get_japanese_emoticon(english_emoticon)
