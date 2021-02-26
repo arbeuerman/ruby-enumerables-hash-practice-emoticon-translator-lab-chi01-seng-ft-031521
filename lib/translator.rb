@@ -41,7 +41,7 @@ def get_english_meaning(file_path, japanese_emoticon)
    #   binding.pry 
       english_meaning = meaning
     else
-      puts english_meaning
+      p english_meaning
     end 
   end 
   # binding.pry 
