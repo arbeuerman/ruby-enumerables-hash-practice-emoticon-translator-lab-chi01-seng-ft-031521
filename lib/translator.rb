@@ -26,6 +26,7 @@ def get_japanese_emoticon(english_emoticon)
     binding.pry 
     if translations[:english].include? english_emoticon
       japanese_emoticon = translations[:japanese]
+    end 
   end 
   puts japanese_emoticon
 end
