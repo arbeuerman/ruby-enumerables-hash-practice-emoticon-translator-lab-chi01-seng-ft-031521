@@ -4,7 +4,6 @@ require 'pry'
 
 def load_library(file_path)
   #load the data for the emoticons
-  binding.pry
   emoticon_data = YAML.load_file(file_path)
   
   #create a hash to sort the emoticons by name and value in english/japanese 
