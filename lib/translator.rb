@@ -1,5 +1,6 @@
 # require modules here
 require "yaml" 
+require 'pry'
 
 def load_library
   #load the data for the emoticons
@@ -20,6 +21,7 @@ end
 def get_japanese_emoticon(english_emoticon)
   # code goes here
   emoticon_translations = load_library
+  binding.pry 
   japanese_emoticon = nil 
   emoticon_translations.each do |translations|
     translations.detect english_emoticon
