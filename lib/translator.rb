@@ -48,4 +48,4 @@ end
 
 #puts load_library("./lib/emoticons.yml")
 
-get_english_meaning("./lib/emoticons.yml", "☜(⌒▽⌒)☞")
+puts get_english_meaning("./lib/emoticons.yml", "☜(⌒▽⌒)☞")
