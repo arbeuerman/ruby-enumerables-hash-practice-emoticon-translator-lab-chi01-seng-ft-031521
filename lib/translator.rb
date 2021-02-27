@@ -21,7 +21,7 @@ end
 def get_japanese_emoticon(file_path, english_emoticon)
   emoticon_translations = load_library(file_path)
   #binding.pry 
-  japanese_emoticon = nil 
+  japanese_emoticon = "Sorry, that emoticon was not found" 
   emoticon_translations.each do |meaning, translations|
     if translations[:english].include? english_emoticon
       japanese_emoticon = translations[:japanese]
