@@ -20,7 +20,6 @@ end
 
 def get_japanese_emoticon(file_path, english_emoticon)
   emoticon_translations = load_library(file_path)
-  #binding.pry 
   japanese_emoticon = "Sorry, that emoticon was not found" 
   emoticon_translations.each do |meaning, translations|
     if translations[:english].include? english_emoticon
@@ -30,23 +29,14 @@ def get_japanese_emoticon(file_path, english_emoticon)
   japanese_emoticon
 end
 
-#puts get_japanese_emoticon("./lib/emoticons.yml", "=D")
 
 def get_english_meaning(file_path, japanese_emoticon)
   emoticon_translations = load_library(file_path)
   english_meaning = "Sorry, that emoticon was not found"
-  #binding.pry
   emoticon_translations.each do |meaning, translations|
     if translations[:japanese].include? japanese_emoticon
       english_meaning = meaning
-      #binding.pry 
     end 
   end 
-  #binding.pry 
   english_meaning
 end
-
-#puts load_library("./lib/emoticons.yml")
-
-get_english_meaning("./lib/emoticons.yml", "8")
-get_japanese_emoticon("./lib/emoticons.yml", "$#$%{}*")
